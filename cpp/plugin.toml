@@ -1,0 +1,8 @@
+id = "cpp-example"
+name = "C++ Example"
+version = "0.0.0"
+endpoint = "/examples/cpp/"
+component = "plugin.wasm"
+
+[build]
+cmd = "./build.sh"

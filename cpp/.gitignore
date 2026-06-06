@@ -1,0 +1,5 @@
+.cache/
+bindings/
+build/
+compile_commands.json
+plugin.wasm
