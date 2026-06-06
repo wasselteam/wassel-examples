@@ -1,0 +1,8 @@
+id = "csharp-example"
+name = "C# Example"
+version = "0.0.0"
+endpoint = "/examples/csharp/"
+component = "WasselPlugin/bin/Release/net10.0/wasi-wasm/publish/WasselPlugin.wasm"
+
+[build]
+cmd = "dotnet build -c Release WasselPlugin"
