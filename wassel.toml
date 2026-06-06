@@ -1,5 +1,6 @@
 [stack]
 plugins = [
+    "go",
     "rust",
     "python",
 ]

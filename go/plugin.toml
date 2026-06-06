@@ -1,0 +1,21 @@
+id = "go-example"
+name = "Go Example"
+version = "0.0.0"
+endpoint = "/examples/go/"
+component = "plugin.wasm"
+
+[build]
+cmd = """\
+    wasm-tools component wit ../wit -o wassel.wasm --wasm && \
+    go tool wit-bindgen-go generate \
+        --world http-plugin \
+        --out internal \
+        ./wassel.wasm && \
+    tinygo build \
+        -target=wasip2 \
+        -o plugin.wasm \
+        --wit-package ./wassel.wasm \
+        --wit-world http-plugin \
+        main.go
+"""
+
