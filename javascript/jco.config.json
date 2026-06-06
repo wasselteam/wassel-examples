@@ -1,0 +1,5 @@
+{
+  "wit": "../wit",
+  "world": "http-plugin",
+  "guests": ["app.js"]
+}

@@ -1,0 +1,13 @@
+id = "javascript-example"
+name = "JavaScript Example"
+version = "0.0.0"
+endpoint = "/examples/javascript/"
+component = "plugin.wasm"
+
+[build]
+cmd = """
+    npx jco componentize app.js \
+        --wit ../wit \
+        --world-name http-plugin \
+        --out plugin.wasm
+"""
