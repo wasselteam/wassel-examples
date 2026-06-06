@@ -1,0 +1,8 @@
+id = "python-example"
+name = "Python Example"
+version = "0.0.0"
+endpoint = "/examples/python/"
+component = "index.wasm"
+
+[build]
+cmd = "./.venv/bin/componentize-py -d ../wit -w http-plugin componentize app"
